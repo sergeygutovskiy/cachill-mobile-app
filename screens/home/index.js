@@ -18,11 +18,13 @@ export default function HomeScreen() {
     const likePost = async () => {
         if ( post === null ) return;
         await postLikePost(post.id);
+        reloadRandomPost();
     }
 
     const dislikePost = async () => {
         if ( post === null ) return;
         await postDislikePost(post.id);
+        reloadRandomPost();
     }
 
     useEffect(() => {

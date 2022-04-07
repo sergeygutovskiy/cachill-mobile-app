@@ -30,8 +30,9 @@ export default function CatalogCategoriesScreen({ navigation }) {
     
     return (
         <ScrollView 
+            style={{ flex: 1 }}
             contentContainerStyle={styles.container}
-            >
+        >
             {
                 categories.map(category =>
                     <Pressable
@@ -64,7 +65,7 @@ export default function CatalogCategoriesScreen({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        alignItems: 'center',
+        alignItems: 'stretch',
         padding: 16,
     },
     

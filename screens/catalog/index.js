@@ -4,7 +4,7 @@ import CatalogPostsScreen from '../../components/catalog/posts';
 
 const Stack = createStackNavigator();
 
-export default function CatalogScreen() {
+export default function CatalogScreen() {    
     return (
         <Stack.Navigator>
             <Stack.Screen
